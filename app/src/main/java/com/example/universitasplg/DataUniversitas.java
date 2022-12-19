@@ -21,10 +21,10 @@ import java.util.ArrayList;
             for (String[] varData : data) {
                 ModelUniversitas model = new ModelUniversitas();
                 model.setNama_univ(varData[0]);
-                model.setTentang_univ(varData[1]);
-                model.setFoto_univ(varData[2]);
-                model.setLogo_univ(varData[3]);
-                model.setAlamat_univ(varData[4]);
+                model.setAlamat_univ(varData[1]);
+                model.setDeskripsi_univ(varData[2]);
+                model.setFoto_univ(varData[3]);
+                model.setLogo_univ(varData[4]);
 
                 dataUniversitas.add(model);
             }

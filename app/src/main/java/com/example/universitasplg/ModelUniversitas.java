@@ -2,7 +2,7 @@ package com.example.universitasplg;
 
 public class ModelUniversitas {
     private String nama_univ;
-    private String tentang_univ;
+    private String deskripsi_univ;
     private String foto_univ;
     private String logo_univ;
     private String alamat_univ;
@@ -11,16 +11,16 @@ public class ModelUniversitas {
         return nama_univ;
     }
 
-    public void setNama_univ (String nama_univ) {
+    public void setNama_univ(String nama_univ) {
         this.nama_univ = nama_univ;
     }
 
-    public String getTentang_univ() {
-        return tentang_univ;
+    public String getDeskripsi_univ() {
+        return deskripsi_univ;
     }
 
-    public void setTentang_univ(String tentang_univ) {
-        this.tentang_univ = tentang_univ;
+    public void setDeskripsi_univ(String deskripsi_univ) {
+        this.deskripsi_univ = deskripsi_univ;
     }
 
     public String getFoto_univ() {
@@ -47,3 +47,4 @@ public class ModelUniversitas {
         this.alamat_univ = alamat_univ;
     }
 }
+
