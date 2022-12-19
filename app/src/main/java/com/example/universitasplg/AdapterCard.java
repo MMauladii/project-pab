@@ -35,7 +35,7 @@ public class AdapterCard extends RecyclerView.Adapter<AdapterCard.ClassViewHolde
     public void onBindViewHolder(@NonNull ClassViewHolder holder, int position) {
         ModelUniversitas universitas = dataUniversitas.get(position);
         holder.tvNama.setText(universitas.getNama_univ());
-        holder.tvTentang.setText(universitas.getTentang_univ());
+        holder.tvDeskripsi.setText(universitas.getDeskripsi_univ());
         Glide
                 .with(ctx)
                 .load(universitas.getFoto_univ())
@@ -45,20 +45,18 @@ public class AdapterCard extends RecyclerView.Adapter<AdapterCard.ClassViewHolde
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String xNama, xTentang, xFoto, xLogo;
+                String xNama, xDeskripsi, xFoto;
 
                 xNama = universitas.getNama_univ();
-                xTentang = universitas.getTentang_univ();
+                xDeskripsi = universitas.getDeskripsi_univ();
                 xFoto = universitas.getFoto_univ();
-                xLogo = universitas.getLogo_univ();
 
 //                Log.d("CEKNRICEK", xNama+ " | " + xTentang + " | " + xFoto);
 
                 Intent kirim = new Intent(ctx, DetailActivity.class);
                 kirim.putExtra("xNama", xNama);
-                kirim.putExtra("xTentang", xTentang);
+                kirim.putExtra("xDeskripsi", xDeskripsi);
                 kirim.putExtra("xFoto", xFoto);
-                kirim.putExtra("xLogo", xLogo);
                 ctx.startActivity(kirim);
             }
         });
@@ -71,15 +69,14 @@ public class AdapterCard extends RecyclerView.Adapter<AdapterCard.ClassViewHolde
     }
 
     public class ClassViewHolder extends RecyclerView.ViewHolder {
-        ImageView ivFoto, ivLogo;
-        TextView tvNama, tvTentang;
+        ImageView ivFoto;
+        TextView tvNama, tvDeskripsi;
 
         public ClassViewHolder(@NonNull View itemView) {
             super(itemView);
             ivFoto = itemView.findViewById(R.id.iv_foto);
-            ivLogo = itemView.findViewById(R.id.iv_logo);
             tvNama = itemView.findViewById(R.id.tv_nama);
-            tvTentang = itemView.findViewById(R.id.tv_tentang);
+            tvDeskripsi = itemView.findViewById(R.id.tv_deskripsi);
         }
     }
 }

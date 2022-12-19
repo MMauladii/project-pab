@@ -22,7 +22,7 @@ import java.util.ArrayList;
                 ModelUniversitas model = new ModelUniversitas();
                 model.setNama_univ(varData[0]);
                 model.setAlamat_univ(varData[1]);
-                model.setTentang_univ(varData[2]);
+                model.setDeskripsi_univ(varData[2]);
                 model.setFoto_univ(varData[3]);
                 model.setLogo_univ(varData[4]);
 

@@ -42,20 +42,18 @@ public class AdapterGrid extends RecyclerView.Adapter<AdapterGrid.ClassViewHolde
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String xNama, xTentang, xFoto, xLogo;
+                String xNama, xDeskripsi, xFoto;
 
                 xNama = universitas.getNama_univ();
-                xTentang = universitas.getTentang_univ();
+                xDeskripsi = universitas.getDeskripsi_univ();
                 xFoto = universitas.getFoto_univ();
-                xLogo = universitas.getLogo_univ();
 
 //                Log.d("CEKNRICEK", xNama+ " | " + xTentang + " | " + xFoto);
 
                 Intent kirim = new Intent(ctx, DetailActivity.class);
                 kirim.putExtra("xNama", xNama);
-                kirim.putExtra("xTentang", xTentang);
+                kirim.putExtra("xDeskripsi", xDeskripsi);
                 kirim.putExtra("xFoto", xFoto);
-                kirim.putExtra("xLogo", xLogo);
 
                 ctx.startActivity(kirim);
             }
