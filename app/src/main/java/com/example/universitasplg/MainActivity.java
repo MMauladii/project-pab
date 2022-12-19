@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
         rvUniversitas = findViewById(R.id.rv_universitas);
         rvUniversitas.setHasFixedSize(true);
 
-        data.addAll(DataUniversitas.DataUniversitas());
+        data.addAll(DataUniversitas.ambilDataUniversitas());
         tampilDataCard();
         //tampilDataGrid();
     }
