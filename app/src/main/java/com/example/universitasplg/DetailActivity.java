@@ -11,8 +11,8 @@ import com.bumptech.glide.Glide;
 
 public class DetailActivity extends AppCompatActivity {
     private ImageView ivFoto, ivLogo;
-    private TextView tvNama, tvAlamat, tvTentang;
-    private String yNama, yAlamat, yTentang, yFoto, yLogo;
+    private TextView tvNama, tvAlamat, tvDeskripsi;
+    private String yNama, yAlamat, yDeskripsi, yFoto, yLogo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,7 +23,7 @@ public class DetailActivity extends AppCompatActivity {
         ivLogo = findViewById(R.id.iv_logo);
         tvNama = findViewById(R.id.tv_nama);
         tvAlamat = findViewById(R.id.tv_alamat);
-        tvTentang = findViewById(R.id.tv_deskripsi);
+        tvDeskripsi = findViewById(R.id.tv_deskripsi);
 
 
         Intent ambil = getIntent();
@@ -31,11 +31,11 @@ public class DetailActivity extends AppCompatActivity {
         yLogo = ambil.getStringExtra("xLogo");
         yNama = ambil.getStringExtra("xNama");
         yAlamat = ambil.getStringExtra("xAlamat");
-        yTentang = ambil.getStringExtra("xTentang");
+        yDeskripsi = ambil.getStringExtra("xDeskripsi");
 
         tvNama.setText(yNama);
         tvAlamat.setText(yAlamat);
-        tvTentang.setText(yTentang);
+        tvDeskripsi.setText(yDeskripsi);
 
         Glide
                 .with(DetailActivity.this)
