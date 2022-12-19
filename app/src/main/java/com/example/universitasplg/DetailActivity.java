@@ -10,9 +10,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.bumptech.glide.Glide;
 
 public class DetailActivity extends AppCompatActivity {
-    private ImageView ivFoto;
-    private TextView tvNama, tvTentang;
-    private String yNama, yTentang, yFoto, yLogo;
+    private ImageView ivFoto, ivLogo;
+    private TextView tvNama, tvAlamat, tvTentang;
+    private String yNama, yAlamat, yTentang, yFoto, yLogo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,21 +20,32 @@ public class DetailActivity extends AppCompatActivity {
         setContentView(R.layout.activity_detail);
 
         ivFoto = findViewById(R.id.iv_foto);
+        ivLogo = findViewById(R.id.iv_logo);
         tvNama = findViewById(R.id.tv_nama);
-        tvTentang = findViewById(R.id.tv_tentang);
+        tvAlamat = findViewById(R.id.tv_alamat);
+        tvTentang = findViewById(R.id.tv_deskripsi);
+
 
         Intent ambil = getIntent();
-        yNama = ambil.getStringExtra("xNama");
-        yTentang = ambil.getStringExtra("xTentang");
         yFoto = ambil.getStringExtra("xFoto");
         yLogo = ambil.getStringExtra("xLogo");
+        yNama = ambil.getStringExtra("xNama");
+        yAlamat = ambil.getStringExtra("xAlamat");
+        yTentang = ambil.getStringExtra("xTentang");
 
         tvNama.setText(yNama);
+        tvAlamat.setText(yAlamat);
         tvTentang.setText(yTentang);
 
         Glide
                 .with(DetailActivity.this)
                 .load(yFoto)
                 .into(ivFoto);
+
+        Glide
+                .with(DetailActivity.this)
+                .load(yLogo)
+                .into(ivLogo);
+
     }
 }
