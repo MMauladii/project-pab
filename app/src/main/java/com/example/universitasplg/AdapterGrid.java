@@ -35,7 +35,7 @@ public class AdapterGrid extends RecyclerView.Adapter<AdapterGrid.ClassViewHolde
         ModelUniversitas universitas = dataUniversitas.get(position);
         Glide
                 .with(ctx)
-                .load(universitas.getFoto())
+                .load(universitas.getFoto_univ())
                 .centerCrop()
                 .into(holder.ivGrid);
 
@@ -44,10 +44,10 @@ public class AdapterGrid extends RecyclerView.Adapter<AdapterGrid.ClassViewHolde
             public void onClick(View v) {
                 String xNama, xTentang, xFoto, xLogo;
 
-                xNama = universitas.getNama();
-                xTentang = universitas.getTentang();
-                xFoto = universitas.getFoto();
-                xLogo = universitas.getLogo();
+                xNama = universitas.getNama_univ();
+                xTentang = universitas.getTentang_univ();
+                xFoto = universitas.getFoto_univ();
+                xLogo = universitas.getLogo_univ();
 
 //                Log.d("CEKNRICEK", xNama+ " | " + xTentang + " | " + xFoto);
 
