@@ -20,10 +20,10 @@ import java.util.ArrayList;
             ArrayList<ModelUniversitas> dataUniversitas = new ArrayList<>();
             for (String[] varData : data) {
                 ModelUniversitas model = new ModelUniversitas();
-                model.setNama(varData[0]);
-                model.setTentang(varData[1]);
-                model.setFoto(varData[2]);
-                model.setLogo(varData[3]);
+                model.setNama_univ(varData[0]);
+                model.setTentang_univ(varData[1]);
+                model.setFoto_univ(varData[2]);
+                model.setLogo_univ(varData[3]);
 
                 dataUniversitas.add(model);
             }
