@@ -71,12 +71,13 @@ public class AdapterCard extends RecyclerView.Adapter<AdapterCard.ClassViewHolde
     }
 
     public class ClassViewHolder extends RecyclerView.ViewHolder {
-        ImageView ivFoto;
+        ImageView ivFoto, ivLogo;
         TextView tvNama, tvTentang;
 
         public ClassViewHolder(@NonNull View itemView) {
             super(itemView);
             ivFoto = itemView.findViewById(R.id.iv_foto);
+            ivLogo = itemView.findViewById(R.id.iv_logo);
             tvNama = itemView.findViewById(R.id.tv_nama);
             tvTentang = itemView.findViewById(R.id.tv_tentang);
         }
