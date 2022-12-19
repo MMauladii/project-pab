@@ -77,6 +77,7 @@ public class AdapterCard extends RecyclerView.Adapter<AdapterCard.ClassViewHolde
         public ClassViewHolder(@NonNull View itemView) {
             super(itemView);
             ivFoto = itemView.findViewById(R.id.iv_foto);
+            ivFoto = itemView.findViewById(R.id.iv_logo);
             tvNama = itemView.findViewById(R.id.tv_nama);
             tvTentang = itemView.findViewById(R.id.tv_tentang);
         }
