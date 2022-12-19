@@ -1,4 +1,4 @@
-package com.example.splash;
+package com.example.universitasplg;
 
 import org.junit.Test;
 
