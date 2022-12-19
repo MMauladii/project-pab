@@ -1,6 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content"
+    android:layout_margin="6dp"
+    android:elevation="6dp">
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="6dp">
+
+        <ImageView
+            android:layout_width="1000dp"
+            android:layout_height="150dp"
+            android:id="@+id/iv_foto"
+            android:src="@mipmap/ic_launcher"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_nama"
+            android:text="Nama Universitas"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_below="@id/iv_foto"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_tentang"
+            android:text="Tentang Universitas"
+            android:layout_below="@id/tv_nama"
+            android:ellipsize="end"
+            android:maxLines="3"/>
+    </RelativeLayout>
 </androidx.cardview.widget.CardView>
