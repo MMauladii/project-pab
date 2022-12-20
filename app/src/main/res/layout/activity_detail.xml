@@ -31,7 +31,7 @@
             android:id="@+id/tv_nama"
             android:text="Nama Universitas"
             android:padding="6dp"
-            android:layout_marginLeft="100dp"
+            android:layout_marginLeft="50dp"
             style="@style/TextAppearance.AppCompat.Large"/>
 
         <TextView
