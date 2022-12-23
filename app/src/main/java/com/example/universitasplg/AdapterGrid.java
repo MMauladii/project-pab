@@ -42,11 +42,13 @@ public class AdapterGrid extends RecyclerView.Adapter<AdapterGrid.ClassViewHolde
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String xNama, xDeskripsi, xFoto;
+                String xNama, xDeskripsi, xFoto, xLogo, xAlamat;
 
                 xNama = universitas.getNama_univ();
                 xDeskripsi = universitas.getDeskripsi_univ();
                 xFoto = universitas.getFoto_univ();
+                xLogo = universitas.getLogo_univ();
+                xAlamat = universitas.getAlamat_univ();
 
 //                Log.d("CEKNRICEK", xNama+ " | " + xTentang + " | " + xFoto);
 
@@ -54,6 +56,8 @@ public class AdapterGrid extends RecyclerView.Adapter<AdapterGrid.ClassViewHolde
                 kirim.putExtra("xNama", xNama);
                 kirim.putExtra("xDeskripsi", xDeskripsi);
                 kirim.putExtra("xFoto", xFoto);
+                kirim.putExtra("xLogo", xLogo);
+                kirim.putExtra("xAlamat", xAlamat);
 
                 ctx.startActivity(kirim);
             }

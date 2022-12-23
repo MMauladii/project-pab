@@ -20,18 +20,18 @@
 
         <ImageView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="50dp"
             android:id="@+id/iv_logo"
             android:layout_marginTop="20dp"
             android:src="@mipmap/ic_launcher"/>
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/tv_nama"
             android:text="Nama Universitas"
             android:padding="6dp"
-            android:layout_marginLeft="50dp"
+            android:textAlignment="center"
             style="@style/TextAppearance.AppCompat.Large"/>
 
         <TextView
