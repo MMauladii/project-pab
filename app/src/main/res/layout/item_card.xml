@@ -8,12 +8,14 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="#222222"
         android:padding="6dp">
 
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="200dp"
             android:id="@+id/iv_foto"
+            android:background="#222222"
             android:src="@mipmap/ic_launcher"/>
 
         <TextView
@@ -21,6 +23,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/tv_nama"
             android:text="Nama Universitas"
+            android:textColor="#FFFFFF"
             android:textSize="20sp"
             android:textStyle="bold"
             android:layout_below="@id/iv_foto"
@@ -30,6 +33,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/tv_deskripsi"
+            android:textColor="#FFFFFF"
             android:text="Deskripsi Universitas"
             android:layout_below="@id/tv_nama"
             android:ellipsize="end"
