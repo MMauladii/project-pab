@@ -51,6 +51,7 @@
             android:id="@+id/tv_title_deskripsi"
             style="@style/TextAppearance.AppCompat.Large"
             android:textSize="20dp"
+            android:textStyle="bold"
             android:layout_marginTop="20dp"
             android:textAlignment="center"/>
 
