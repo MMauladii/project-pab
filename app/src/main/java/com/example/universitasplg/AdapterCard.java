@@ -45,13 +45,14 @@ public class AdapterCard extends RecyclerView.Adapter<AdapterCard.ClassViewHolde
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String xNama, xDeskripsi, xFoto, xLogo, xAlamat;
+                String xNama, xDeskripsi, xFoto, xLogo, xAlamat, xMaps;
 
                 xNama = universitas.getNama_univ();
                 xDeskripsi = universitas.getDeskripsi_univ();
                 xFoto = universitas.getFoto_univ();
                 xLogo = universitas.getLogo_univ();
                 xAlamat = universitas.getAlamat_univ();
+                xMaps = universitas.getMaps_univ();
 
 //                Log.d("CEKNRICEK", xNama+ " | " + xTentang + " | " + xFoto);
 
@@ -61,6 +62,7 @@ public class AdapterCard extends RecyclerView.Adapter<AdapterCard.ClassViewHolde
                 kirim.putExtra("xFoto", xFoto);
                 kirim.putExtra("xLogo", xLogo);
                 kirim.putExtra("xAlamat", xAlamat);
+                kirim.putExtra("xMaps", xMaps);
                 ctx.startActivity(kirim);
             }
         });

@@ -6,6 +6,7 @@ public class ModelUniversitas {
     private String foto_univ;
     private String logo_univ;
     private String alamat_univ;
+    private String maps_univ;
 
     public String getNama_univ() {
         return nama_univ;
@@ -46,5 +47,9 @@ public class ModelUniversitas {
     public void setAlamat_univ(String alamat_univ) {
         this.alamat_univ = alamat_univ;
     }
+
+    public String getMaps_univ() { return maps_univ; }
+
+    public void setMaps_univ(String maps_univ) { this.maps_univ = maps_univ; }
 }
 
