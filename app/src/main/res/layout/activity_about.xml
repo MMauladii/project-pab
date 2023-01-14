@@ -15,5 +15,37 @@
         android:textColor="#FFFFFF"
         style="@style/TextAppearance.AppCompat.Large"/>
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="NAMA ANNGOTA KELOMPOK :"
+        android:textSize="20dp"
+        android:layout_marginTop="45dp"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="1. MUHAMMAD MAULADI Sebagai Ketua Kelompok"
+        android:textSize="15dp"
+        android:layout_marginTop="80dp"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="2. PUTRA GANDA DEWATA Sebagai Team Kelompok"
+        android:textSize="15dp"
+        android:layout_marginTop="100dp"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="3. ADIKARA ALIF NUHRAHMAN Sebagai Team Kelompok"
+        android:textSize="15dp"
+        android:layout_marginTop="120dp"
+        android:textColor="#FFFFFF" />
+
 
 </RelativeLayout>
