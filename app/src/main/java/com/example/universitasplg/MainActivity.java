@@ -6,6 +6,7 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -26,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
 
         data.addAll(DataUniversitas.ambilDataUniversitas());
         tampilDataCard();
-        //tampilDataGrid();
+        tampilDataGrid();
     }
 
     private void tampilDataCard(){
@@ -49,6 +50,11 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        if (item.getItemId() == R.id.menu_about) {
+            startActivity(new Intent(MainActivity.this, AboutActivity.class));
+            return super.onOptionsItemSelected(item);
+        }
+
         switch (item.getItemId()) {
             case R.id.menu_mode_card:
                 tampilDataCard();
