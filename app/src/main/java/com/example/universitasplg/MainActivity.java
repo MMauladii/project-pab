@@ -54,7 +54,6 @@ public class MainActivity extends AppCompatActivity {
             startActivity(new Intent(MainActivity.this, AboutActivity.class));
             return super.onOptionsItemSelected(item);
         }
-
         switch (item.getItemId()) {
             case R.id.menu_mode_card:
                 tampilDataCard();

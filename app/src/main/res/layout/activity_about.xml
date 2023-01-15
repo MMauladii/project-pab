@@ -4,23 +4,40 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#434242"
-    tools:context=".AboutActivity">
+    tools:context=".AboutActivity"
+    >
 
     <TextView
+        style="@style/TextAppearance.AppCompat.Large"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="KELOMPOK CHECK UNIVERSITY"
         android:padding="6dp"
+        android:text="KELOMPOK CHECK UNIVERSITY"
+        android:layout_marginTop="20dp"
         android:textAlignment="center"
-        android:textColor="#FFFFFF"
-        style="@style/TextAppearance.AppCompat.Large"/>
+        android:textColor="#FFFFFF" />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="15dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/logo" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="NAMA ANNGOTA KELOMPOK :"
+        android:text="NAMA ANGGOTA KELOMPOK"
+        android:textAlignment="center"
         android:textSize="20dp"
-        android:layout_marginTop="45dp"
+        android:layout_marginTop="250dp"
         android:textColor="#FFFFFF" />
 
     <TextView
@@ -28,7 +45,7 @@
         android:layout_height="match_parent"
         android:text="1. MUHAMMAD MAULADI Sebagai Ketua Kelompok"
         android:textSize="15dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="300dp"
         android:textColor="#FFFFFF" />
 
     <TextView
@@ -36,7 +53,7 @@
         android:layout_height="match_parent"
         android:text="2. PUTRA GANDA DEWATA Sebagai Team Kelompok"
         android:textSize="15dp"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="330dp"
         android:textColor="#FFFFFF" />
 
     <TextView
@@ -44,7 +61,7 @@
         android:layout_height="match_parent"
         android:text="3. ADIKARA ALIF NUHRAHMAN Sebagai Team Kelompok"
         android:textSize="15dp"
-        android:layout_marginTop="120dp"
+        android:layout_marginTop="360dp"
         android:textColor="#FFFFFF" />
 
 
