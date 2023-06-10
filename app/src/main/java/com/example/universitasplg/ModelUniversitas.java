@@ -24,12 +24,10 @@ public class ModelUniversitas {
         this.deskripsi_univ = deskripsi_univ;
     }
 
-    public String getFoto_univ() {
-        return foto_univ;
+    public String getFoto_univ() { return foto_univ;
     }
 
-    public void setFoto_univ(String foto_univ) {
-        this.foto_univ = foto_univ;
+    public void setFoto_univ(String foto_univ) { this.foto_univ = foto_univ;
     }
 
     public String getLogo_univ() {
